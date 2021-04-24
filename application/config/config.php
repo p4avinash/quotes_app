@@ -27,9 +27,9 @@ $config['base_url'] = 'http://' . $_SERVER['HTTP_HOST'] . '/projects/quotes_app/
 $config['css_url'] = $config['base_url'] . 'assets/css';
 $config['js_url'] = $config['base_url'] . 'assets/js';
 $config['image_url'] = $config['base_url'] . 'assets/img';
-$config['jquery_url'] = $config['base_url'] . 'application/libraries/jquery/jquery.js';
-$config['bootstrap_css_url'] = $config['base_url'] . 'application/libraries/bootstrap/dist/css/bootstrap.min.css';
-$config['bootstrap_js_url'] = $config['base_url'] . 'application/libraries/bootstrap/dist/js/bootstrap.min.js';
+$config['jquery_url'] = 'https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous';
+$config['bootstrap_css_url'] = 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css';
+$config['bootstrap_js_url'] = 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js';
 
 /*
 |--------------------------------------------------------------------------
