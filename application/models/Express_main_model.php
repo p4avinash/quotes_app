@@ -23,7 +23,7 @@ class Express_main_model extends CI_Model{
      * @author Avinash Kumar <p4avinashkumar@gmail.com> on 24th April 2021
      */
     public function is_user_authenticated($email){
-        return $this->db->select('user_id,password')
+        return $this->db->select('user_id,password,is_admin')
         ->where('email', $email)
         ->get('users')->row_array();
     }

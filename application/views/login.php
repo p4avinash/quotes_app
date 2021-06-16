@@ -21,14 +21,14 @@
 <body>
     <div class="user_details">
         <form action="" method="post" id="user_details_form" enctype="multipart/form-data">
-            <div class="input email">
+            <div class="input login-email">
                 <label for="email">Email:</label><br>
-                <input type="email" name="email" id="email" placeholder="enter your email">
-                <div class="error"><?php echo form_error('email'); ?></div>
+                <input type="text" name="login-email" value="<?php echo set_value('login-email') ?>" id="login-email" placeholder="enter your email">
+                <div class="error"><?php echo form_error('login-email'); ?></div>
             </div>
             <div class="input password">
                 <label for="password">Password:</label><br>
-                <input type="password" name="password" id="password" placeholder="create your password">
+                <input type="password" name="password" id="password" placeholder="enter you password">
                 <div class="error"><?php echo form_error('password'); ?></div>
             </div><br>
             <button type="submit">Submit</button>

@@ -14,6 +14,7 @@
     <script src="<?php echo $this->config->item('bootstrap_js_url') ?>"></script>
     <!-- Css file link -->
     <link rel="stylesheet" href="<?php echo $this->config->item('css_url') . '/express_main.css' ?>">
+    <link rel="stylesheet" href="<?php echo $this->config->item('css_url').'/register.css' ?>">
     <!-- Fontawesome link css -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" />
 </head>
@@ -23,17 +24,17 @@
         <form action="" method="post" id="user_details_form" enctype="multipart/form-data">
             <div class="input first_name">
                 <label for="first_name">First Name:</label><br>
-                <input type="text" name="first_name" id="first_name" placeholder="enter your first name">
+                <input type="text" name="first_name" value="<?php echo set_value('first_name') ?>" id="first_name" placeholder="enter your first name">
                 <div class="error"><?php echo form_error('first_name'); ?></div>
             </div>
             <div class="input last_name">
                 <label for="last_name">Last Name:</label><br>
-                <input type="text" name="last_name" id="last_name" placeholder="enter your last name">
+                <input type="text" name="last_name" value="<?php echo set_value('last_name') ?>" id="last_name" placeholder="enter your last name">
                 <div class="error"><?php echo form_error('last_name'); ?></div>
             </div>
             <div class="input email">
                 <label for="email">Email:</label><br>
-                <input type="email" name="email" id="email" placeholder="enter your email">
+                <input type="text" name="email" value="<?php echo set_value('email') ?>" id="email" placeholder="enter your email">
                 <div class="error"><?php echo form_error('email'); ?></div>
             </div>
             <div class="input password">

@@ -6,10 +6,10 @@ $( document ).ready(function() {
     var base_url = $('#base_url').val()
 
     $('#register_btn').on('click',function() {
-        location.href = `${base_url}Express_main/load_register`
+        location.href = `${base_url}Express_main/register`
     })
 
     $('#login_btn').on('click', function(){
-        location.href = `${base_url}Express_main/load_login`
+        location.href = `${base_url}Express_main/login`
     })
 });
